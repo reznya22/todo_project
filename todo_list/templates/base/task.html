@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Task detail</title>
-</head>
-<body>
-{{ task_detail }}
-</body>
-</html>
+<h1>Task: {{ task }}</h1>
+{{ task.description }}
+<p></p>
+<a href="{% url 'base:task' %}">Go Back</a>
